@@ -14,6 +14,27 @@ public class Cop extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        move();
+        crash();
     }    
+    
+    public void move()
+    {
+        setLocation(getX(), getY() +3);
+        if(isAtEdge())
+        {
+            setLocation( getX(), 0);
+        }
+    }
+    
+    public void crash()
+    {
+        if( isTouching(Car.class) )
+        {
+            removeTouching(Car.class);
+            Greenfoot.stop();
+        }
+    }
+    
+    
 }
