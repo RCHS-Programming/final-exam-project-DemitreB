@@ -1,5 +1,5 @@
 #Greenfoot project file
-class.Car.image=Car.jpg
+class.Car.image=car.png
 class.Car.superclass=greenfoot.Actor
 class.Cop.image=Cop.jpg
 class.Cop.superclass=greenfoot.Actor
@@ -8,10 +8,10 @@ class.Road.superclass=greenfoot.World
 dependency1.from=Cop
 dependency1.to=Car
 dependency1.type=UsesDependency
-editor.fx.0.height=739
+editor.fx.0.height=728
 editor.fx.0.width=817
 editor.fx.0.x=388
-editor.fx.0.y=27
+editor.fx.0.y=38
 mainWindow.height=781
 mainWindow.width=1030
 mainWindow.x=45

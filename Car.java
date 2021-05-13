@@ -14,6 +14,20 @@ public class Car extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        move();
     }    
+    
+    public void move()
+    {
+        if (Greenfoot.isKeyDown("left"))
+        {
+            setLocation(getX() -5, getY());
+            
+        }
+        if (Greenfoot.isKeyDown("right"))
+        {
+            setLocation(getX() +5, getY());
+            
+        }
+    }
 }
