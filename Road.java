@@ -18,6 +18,15 @@ public class Road extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1); 
         
+         
+        addObject(new Car(), 400, 500);
         
+        addObject(new Cop(), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(100));
+        addObject(new Cop(), Greenfoot.getRandomNumber(800),Greenfoot.getRandomNumber(100));
+        addObject(new Cop(), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(100));
+        addObject(new Cop(), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(100));
+        addObject(new Cop(), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(100));
+        addObject(new Cop(), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(100));
+        addObject(new Cop(), Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(100));
     }
 }

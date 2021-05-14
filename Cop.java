@@ -16,6 +16,7 @@ public class Cop extends Actor
     {
         move();
         crash();
+        setUp();
     }    
     
     public void move()
@@ -23,7 +24,7 @@ public class Cop extends Actor
         setLocation(getX(), getY() +3);
         if(isAtEdge())
         {
-            setLocation( getX(), 0);
+            setLocation( Greenfoot.getRandomNumber(800), 0);
         }
     }
     
@@ -36,5 +37,11 @@ public class Cop extends Actor
         }
     }
     
-    
+    public void setUp()
+    {
+        if ( isTouching(Cop.class))
+        {
+            setLocation( Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(150));
+        }
+    }
 }
