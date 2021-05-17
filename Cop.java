@@ -8,6 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Cop extends Actor
 {
+    private int Speed = 3;
+    private int Reset = 0;
     /**
      * Act - do whatever the Cop wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -17,14 +19,16 @@ public class Cop extends Actor
         move();
         crash();
         setUp();
+        Speed();
     }    
     
     public void move()
     {
-        setLocation(getX(), getY() +3);
+        setLocation(getX(), getY() +Speed);
         if(isAtEdge())
         {
             setLocation( Greenfoot.getRandomNumber(800), 0);
+            Reset = Reset +1;
         }
     }
     
@@ -41,7 +45,15 @@ public class Cop extends Actor
     {
         if ( isTouching(Cop.class))
         {
-            setLocation( Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(150));
+            setLocation( Greenfoot.getRandomNumber(800), Greenfoot.getRandomNumber(130));
+        }
+    }
+    
+    public void Speed()
+    {
+        if (Reset > 9)
+        {
+            Speed=5;
         }
     }
 }
