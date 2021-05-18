@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Car extends Actor
 {
-    private int move = 5;
+    private int move = 6;
     private int Reset = 0;
     /**
      * Act - do whatever the Car wants to do. This method is called whenever
@@ -38,7 +38,11 @@ public class Car extends Actor
     {
         if (Reset > 9)
         {
-            move = 7;
+            move = 8;
+        }
+        if (Reset > 15)
+        {
+            move = 12;
         }
     }
 }
