@@ -18,6 +18,7 @@ public class Car extends Actor
     {
         move();
         changeSpeed();
+        Reset=Reset+1;
     }    
     
     public void move()
@@ -36,13 +37,9 @@ public class Car extends Actor
     
     public void changeSpeed()
     {
-        if (Reset > 9)
+        if (Reset > 2000)
         {
             move = 8;
-        }
-        if (Reset > 15)
-        {
-            move = 12;
         }
     }
 }

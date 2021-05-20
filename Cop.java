@@ -57,8 +57,7 @@ public class Cop extends Actor
         }
         if (Reset > 15)
         {
-            Speed=8
-            ;
+            Speed=8;
         }
     }
 }
